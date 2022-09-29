@@ -1,281 +1,201 @@
 <!DOCTYPE html>
-<html>
-  <!-- Bismillah -->
-  <!--
-    - File ini dibuat untuk tugas santri Pondok IT
-    - Created by : Muhammad Rizqi
-  -->
+<html lang="en">
   <head>
-  	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Rizqi</title>
-    <script src="https://kit.fontawesome.com/b28fb87e49.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="res/style/css/style.css">
+    <script
+      src="https://kit.fontawesome.com/b28fb87e49.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #f0f7ee;
+        font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+        text-decoration: none;
+      }
+      body {
+        background-color: #07020d;
+      }
+      .sections {
+        height: 100vh;
+      }
+      .bg_blue {
+        background-color: #2176ff;
+      }
+      .section_content {
+        max-width: 85vw;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+      }
+      .title_name {
+        font-size: 4.5rem;
+        color: #33a1fd;
+      }
+      .title_section {
+        font-size: 2.25rem;
+        font-weight: 500;
+      }
+      .button {
+        padding: 12px 24px;
+        background-color: #2176ff;
+        border-radius: 10px;
+        font-weight: 500;
+      }
+      .button:hover {
+        background-color: #33a1fd;
+      }
+      .button_light {
+        background-color: #33a1fd;
+      }
+      .header_button_group {
+        margin-top: 24px;
+      }
+      .row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .row a {
+        margin-right: 16px;
+      }
+      .button_icon {
+        font-size: 2.5rem;
+      }
+      .navbar {
+        /* make it stick */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        padding: 32px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style-image: none;
+      }
+
+      .menu-item {
+        display: inline-block;
+        margin-left: 50px;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      .menu-item:hover a {
+        color: white;
+      }
+      .footer_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
-
   <body>
-    <header>
-      <div id="head">
-        <div id="jumbo-content">
-          <h1>I'M MUHAMMAD RIZQI</h1>
+    <nav class="navbar">
+      <div class="nav-menu">
+        <a href="#home" class="menu-item">MRQ</a>
+      </div>
+      <ul class="nav-menu">
+        <li class="menu-item">
+          <a href="#home">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="#about">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="#work">Work</a>
+        </li>
+        <li class="menu-item">
+          <a href="#skils">Skils</a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sections" id="home">
+      <div class="section_content">
+        <div class="row">
+          <div>
+            <h3 class="title_section">Hello World!, I'm</h3>
+            <h1 class="title_name">MUHAMMAD RIZQI</h1>
+            <h2 class="title_section">Software Engineer & Graphic Designer</h2>
+            <div class="header_button_group">
+              <a href="mailto:muhammad-rizqi@live.com" class="button"
+                >Contact Me</a
+              >
+              <a
+                href="#"
+                class="fa-brands fa-square-github fa-2xl button_icon"
+              ></a>
+              <a href="#" class="fa-brands fa-linkedin fa-2xl button_icon"></a>
+            </div>
+          </div>
+          <img src="./res/image/undraw_programming.svg" alt="header image" />
         </div>
-      </div>
-      <div id="basic-info">
-        <div id="profile-image">
-          <img id="foto" src="res/image/pp.png" alt="profil">
-        </div>
-        <div id="tagline">
-          <h2>Muhammad Rizqi</h2>
-          <p>Santri Pondok Programmer</p>    
-        </div>
-      </div>
-      <div id="nav">
-        <div class="topnav">
-          <a class="active" href="#home">TENTANG</a>
-          <a href="#news">SKILL</a>
-          <a href="#news">FOTO</a>
-          <a href="#news">KONTAK</a>
-        </div>    
-      </div>
-  
-
-    </header>
-
-    <div class="content">
-      <div class="side-left">
-        
-        <section class="about">
-          <h3>Tentang</h3>
-          <ul>
-            <li>
-              <div class="icon">
-                <i class="fa fa-briefcase"></i>
-              </div>
-              Santri Pondok IT
-            </li>
-            <li>
-              <div class="icon">
-                <i class="fa fa-calendar-o"></i>
-              </div>
-              Sukabumi, 27 Juli 1999
-            </li>
-
-            <li>
-              <div class="icon">
-                <i class="fa fa-venus-mars"></i>
-              </div>
-              Laki-laki
-            </li>
-
-            <li>
-              <div class="icon">
-    				    <i class="fa fa-map-marker"></i>
-              </div>
-              Cibadak, Sukabumi - Jawa Barat
-            </li>
-    
-          </ul>
-        </section>
-        <section class="about">
-          <h3>Media Sosial</h3>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/profile.php?id=100009844626167" target="_blank">
-                <div class="icon">
-                  <i class="fa fa-facebook"></i>
-                </div>
-                Muhammad Rizqi
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/mrizqi.mrq/" target="_blank">
-                <div class="icon">
-                  <i class="fa fa-instagram"></i>
-                </div>
-                @mrizqi.mrq
-              </a>
-            </li>
-
-            <li>
-              <a href="https://github.com/m-rizqi27" target="_blank">
-                <div class="icon">
-                  <i class="fa fa-github"></i>
-                </div>
-                m-rizqi27
-              </a>
-            </li>
-
-            <li>
-              <a href="http://wa.me/6285211666457" target="_blank">
-                <div class="icon">
-                  <i class="fa fa-whatsapp"></i>
-                </div>
-                085211666457
-              </a>
-            </li>
-        
-            <li>
-              <a href="mailto:muhammadrizqi712@gmail.com">
-                <div class="icon">
-                  <i class="fa fa-envelope-o"></i>
-                </div>
-                muhammadrizqi712@gmail.com  
-              </a>
-            </li>
-        
-        
-          </ul>
-        </section>
-
-      </div>
-      
-      <div class="side-right">
-        
-        <section>
-          <h3>Pendidikan</h3>
-          <ul>
-            <li>
-              SMK Tamansiswa Cibadak 2014-2017
-            </li>
-            <li>
-              Mts Miftahussalam 2011-2014
-            </li>
-            <li>
-              SDN Barusawah 2005-2011
-            </li>
-          </ul>
-
-          <h3>Pengalaman</h3>
-          <ul>
-            <li>
-              Bekerja di Kuttab Al-Ikhlas tahun 2019 Admin dan IT Support
-            </li>
-            <li>
-              Bekerja di PT. Mersifarma TM tahun 2017 Operator Produksi
-            </li>
-            <li>
-              Magang di Agung Computer tahun 2016
-            </li>
-          </ul>
-          <h3>Pelatihan</h3>
-          <ul>
-            <li>
-              W3Schools
-            </li>
-            <li>
-              Codepolitan
-            </li>
-            <li>
-              Sololearn
-            </li>
-            <li>
-              Dicoding
-            </li>
-          </ul>
-          <h3>Minat</h3>
-          <ul>
-            <li>
-              Teknologi Informasi
-            </li>
-            <li>
-              Multimedia
-            </li>
-            <li>
-              Pemograman
-            </li>
-          </ul>
-        </section>    
-      
-       
-        </div>
-    </div>
-    
-    <div class="content">
-      <div class="side-left">
-        <section>
-          <h3>Web Development</h3>
-          <div class="item-bar">
-            <i class="fa fa-html5"></i> <strong>HTML</strong>
-            <div class="myProgress">
-              <div class="myBar" style="width: 70%;">70%</div>
-            </div>
-          </div>
-          <div class="item-bar">
-            <i class="fa fa-css3"></i> <strong>CSS</strong>
-            <div class="myProgress">
-              <div class="myBar" style="width: 70%;">70%</div>
-            </div>
-          </div>
-
-          <div class="item-bar">
-            <i class="fab fa-js"></i> <strong>JavaScript</strong>
-            <div class="myProgress">
-              <div class="myBar" style="width: 60%;">60%</div>
-            </div>
-          </div>
-
-          <div class="item-bar">
-            <i class="fab fa-php"></i> <strong>PHP</strong>
-            <div class="myProgress">
-              <div class="myBar" style="width: 50%;">50%</div>
-            </div>
-          </div>
-
-        </section>    
-
-        <section>
-          <h3>Mobile Development</h3>
-          <div class="item-bar">
-            <i class="fa fa-android"></i> <strong>Kotlin</strong>
-            <div class="myProgress">
-              <div class="myBar" style="width: 70%;">70%</div>
-            </div>
-          </div>
-          <div class="item-bar">
-            <i class="fab fa-java"></i> <strong>Java</strong>
-            <div class="myProgress">
-              <div class="myBar" style="width: 50%;">50%</div>
-            </div>
-          </div>
-        </section>    
-      </div>
-
-      <div class="side-right">
-        <section>
-          <h3>Sertifikat</h3>
-        </section>
       </div>
     </div>
-    
-    <footer>
-      <p>Find me on social media</p>
-      <p>
-        <a href="http://wa.me/6285211666457" target="_blank">
-          <i class="fa fa-whatsapp"></i>
-        </a>
-
-        <a href="https://github.com/m-rizqi27" target="_blank">
-          <i class="fa fa-github"></i>
-        </a>
-
-        <a 
-          href="https://www.youtube.com/channel/UCYtfpC0kNtDvv_wFMPE_bOg"
-          target="_blank">
-          <i class="fa fa-youtube-play"></i>
-        </a>
-
-        <a href="https://www.instagram.com/mrizqi.mrq/" target="_blank">
-          <i class="fa fa-instagram"></i>
-        </a>
-
-        <a href="https://www.facebook.com/profile.php?id=100009844626167" target="_blank">
-          <i class="fa fa-facebook"></i>
-        </a>
-  
-      </p>
-      <p>&copy;2020 Muhammad Rizqi</p>
-    </footer>
+    <div class="sections bg_blue" id="about">
+      <div class="section_content">
+        <div class="row">
+          <img src="./res/image/undraw_coding.svg" alt="header image" />
+          <div>
+            <h2 class="title_section">About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est,
+              minima. Odit repellendus doloribus aut, rem voluptas iste nulla,
+              maiores dolore perferendis officiis quibusdam quam consequuntur
+              necessitatibus. Culpa architecto ab quod? Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Labore temporibus voluptates
+              possimus mollitia odit incidunt iusto? Nesciunt iste architecto,
+              in accusantium fugiat fuga voluptatem aliquam quaerat a animi odit
+              placeat.
+            </p>
+            <div class="header_button_group">
+              <a
+                href="mailto:muhammad-rizqi@live.com"
+                class="button button_light"
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sections" id="work">
+      <div class="section_content">
+        <h2 class="title_section">Project</h2>
+      </div>
+    </div>
+    <div class="sections bg_blue" id="skils">
+      <div class="section_content">
+        <h2 class="title_section">My Skils</h2>
+      </div>
+    </div>
+    <div class="footer_section" id="contact">
+      <h2 class="title_section header_button_group">Contact Me</h2>
+      <div>
+        <div class="header_button_group">
+          <a href="#" class="fa-brands fa-square-github fa-2xl button_icon"></a>
+          <a href="#" class="fa-brands fa-linkedin fa-2xl button_icon"></a>
+        </div>
+      </div>
+      <div class="header_button_group">Muhammad Rizqi</div>
+    </div>
   </body>
 </html>
